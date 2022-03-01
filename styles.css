@@ -1,0 +1,37 @@
+.hide {
+    display: none;
+}
+.welcome {
+    border: 1px solid black;
+    border-radius: 12px;
+    font-family: verdana;
+    padding: 10px;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 200px;
+    width: 50%;
+    position: relative;
+}
+button {
+ font-size: 20px;
+ border: double;
+ border-radius: 5px;
+}
+p {
+    padding: 20px;
+}
+
+.question {
+    color: black;
+}
+
+.answer {
+    color: blue;
+}
+
+div.answer:hover,
+div.answer:active {
+    color: white;
+    background-color: blue;
+}

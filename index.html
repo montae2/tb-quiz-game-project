@@ -5,52 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Start Quiz Game</title>
-    <style>
-        .welcome {
-            border: 1px solid black;
-            border-radius: 12px;
-            font-family: verdana;
-            padding: 10px;
-            flex-direction: column;
-            margin: 0 auto;
-            text-align: center;
-            margin-top: 200px;
-            width: 50%;
-            position: relative;
-        }
-        button {
-         font-size: 20px;
-         border: double;
-         border-radius: 5px;
-        }
-        p {
-            padding: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+ 
 </head>
 <body>
-    <div class="welcome center">
-        <p>
+    <div id="main center">
+        <div id="greeting" class="welcome">
+            <p>
             Test you front end developer skills by answering the following questions.
-        </p>
-        <div class="btnBegin">
-            <a href="question.html">
-            <button id="btnBegin" onclick="setCountDownTimer();">Begin</button>
-            </a>
+            </p>
+            <button id="btnBegin" onclick="doGame();">Begin</button>
         </div>
+        <div id="score-board" class="hide">
+            <div id="timerContainer">Time Remaining: <span id="timer" style="text-align:left"></span></div>
+            <div id="scoreContainer">Score: <span id="score" style="text-align:right"></span></div>
     </div>
+        <div id="questions">
+
+        </div>
 </body>
-<script>
-    function setCountDownTimer() {
-    countDownTimer = maxTime;
-}
-
-let timerInterval = setInterval(updateTimer, 1000);
-
-function updateTimer() {
-countDownTimer = countDownTimer - 1;
-alert("Time has expired");
-window.location.href("save.html");
-}
-</script>
 </html>
